@@ -24,13 +24,13 @@ while N <0:
     N = int (input ("Diga um número inteiro positivo \n> "))
 
 total = 0
-espaco= ""
+marca= ""
 
 for i in range (1, N+1):
     total += i
 
     if i == 1:
-        espaco += str(i) #Transformo p/ string
+        marca += str(i) #Transformo p/ string
     else:
-        espaco += "+" + str(i)
-print (f"{espaco} = {total}")
+        marca += "+" + str(i)
+print (f"{marca} = {total}")
