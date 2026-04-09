@@ -37,7 +37,9 @@ palavra = input ("Digite uma palavra que começe com uma vogal \n > ")
 if palavra[0].lower() not in "aeiou": #o [0] pega a primeira letra de "Palavra"
     # in verifica se algo está dentro
     # not in verifica de algo não está dentro
-    # .lower() Faz com que inclua letras maiúsculas,
+    # .lower() Faz com que inclua letras maiúsculas
+    # ['P', 'a','l', 'a', 'v', 'r','a'] 
+    # Dá p/ fzer usando while
     print ("Palavra Inválida!")
 else:
     for letra in palavra:
