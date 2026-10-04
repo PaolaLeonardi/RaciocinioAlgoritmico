@@ -38,3 +38,19 @@ elif usuario == "convidado":
     print("Acesso restrito")
 else:
     print("Usuário ou senha incorreta")
+
+#verifique a posição do ponto em relação a um quadrado
+#cujos vértices vão de (0,0) até (10, 10).
+#Se o ponto estiver estritamente dentro da região, mostre “Dentro do quadrado”.
+#Se estiver exatamente em uma das bordas, mostre “Na fronteira”.
+#Caso contrário, mostre “Fora do quadrado”.
+
+x = (int(input("Cordenada x: ")))
+y = (int(input("Cordenada y: ")))
+
+if x == 10 or x == 0 or y == 0 or y == 10:
+    print("Na fronteira")
+elif x <= 9 or y <= 9 or x >= 0 or y >=0:
+    print("Dentro do quadrado")
+else:
+    print("Fora do quadrado")
