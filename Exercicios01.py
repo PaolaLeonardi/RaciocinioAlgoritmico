@@ -23,3 +23,18 @@ if (ano % 4 == 0 and ano % 100 != 0) or ano % 400 == 0:
     print ("Ano Bissexto!")
 else:
     print ("Não é um ano bissexto!")
+
+#Peça usuário e senha.
+#Só permita acesso se usuário for "admin" e a senha for "1234".
+#Caso contrário, bloqueie.
+#Se o usuário for "convidado" e não digitar senha, exiba “Acesso restrito”.
+
+usuario = input("Usuário: ")
+senha = input("Senha: ")
+
+if usuario == "admin" and senha == "1234":
+    print ("Usuário logado!")
+elif usuario == "convidado":
+    print("Acesso restrito")
+else:
+    print("Usuário ou senha incorreta")
