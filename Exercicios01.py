@@ -54,3 +54,39 @@ elif x <= 9 or y <= 9 or x >= 0 or y >=0:
     print("Dentro do quadrado")
 else:
     print("Fora do quadrado")
+
+#Peça os três lados de uma figura. Primeiro, verifique se esses valores podem
+#formar um triângulo.
+#⚠Lembre-se: a soma de dois lados deve ser sempre maior que o terceiro.
+#Se for possível formar um triângulo, classifique-o:
+#Equilátero: todos os lados têm o mesmo tamanho.
+#Isósceles: dois lados têm o mesmo tamanho.
+#Escaleno: todos os lados são diferentes.
+#Além disso, verifique se o triângulo é retângulo:
+#⚠️Um triângulo é retângulo quando o quadrado do maior lado
+#é igual à soma dos quadrados dos outros dois lados.
+#Caso os valores não formem um triângulo, informe isso ao usuário.
+
+a= (int (input ("Lado 1: ")))
+b= (int (input ("Lado 2: ")))
+c= (int (input ("Lado 3: ")))
+
+Classificao = 0
+tipo = 0
+
+if a + b > c and a + c > b and b + c > a:
+    print ("Triângulo!")
+
+    if a == b and b == c:
+        print("Equilátero")
+    elif a == b or a == c or b == c:
+        print("Isósceles")
+    else:
+        print("Escaleno")
+
+    if pow(a, 2) + pow(b, 2) == pow(c, 2) or pow(a, 2) + pow(c, 2) == pow(b, 2) or pow(b, 2) + pow(c, 2) == pow(a, 2):
+        print ("Triângulo Retângulo")
+    else:
+        print("não é um Triângulo Retângulo")
+else:
+    print ("não é um Triângulo")
